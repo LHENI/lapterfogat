@@ -13,7 +13,14 @@ import java.util.Scanner;
 public class MainConsole {
 
     public MainConsole() {
-        
+        this.about();
+        System.out.println("Feladat 366");
+        System.out.println("-----------");
+        String aStr = input("Lapátlója:");
+        double diagonal = Double.parseDouble(aStr);
+        Volume cube = new Volume();
+        System.out.println("Térfogat");
+        System.err.println(cube.calcVolume(diagonal));
     }
 
     public String input(String m){
@@ -27,7 +34,7 @@ public class MainConsole {
         System.out.println("---------------------------------------");
         System.out.println("Laczkó Henrietta");
         System.out.println("Szoft I-I N");
-        System.out.println("2023-02-20");
+        System.out.println("2023-04-04");
         System.out.println("---------------------------------------");
     }
 }
